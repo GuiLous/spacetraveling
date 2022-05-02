@@ -1,0 +1,71 @@
+{
+  "id": "posts",
+  "label": "posts",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "slug",
+          "placeholder": "Post Uid"
+        },
+        "type": "UID"
+      },
+      "title": {
+        "config": {
+          "label": "Title",
+          "placeholder": "Titulo do Post"
+        },
+        "type": "Text"
+      },
+      "subtitle": {
+        "config": {
+          "label": "Subtitle",
+          "placeholder": "Subtitulo do post"
+        },
+        "type": "Text"
+      },
+      "author": {
+        "config": {
+          "label": "Author",
+          "placeholder": "autor do post"
+        },
+        "type": "Text"
+      },
+      "banner": {
+        "config": {
+          "label": "Banner",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "content": {
+        "config": {
+          "label": "Content",
+          "placeholder": "",
+          "fields": {
+            "heading": {
+              "config": {
+                "label": "Heading",
+                "placeholder": "Título da seção do Post"
+              },
+              "type": "Text"
+            },
+            "body": {
+              "config": {
+                "label": "Body",
+                "placeholder": "Conteúdo da seção do Post.",
+                "allowTargetBlank": true,
+                "multi": "paragraph,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              },
+              "type": "StructuredText"
+            }
+          }
+        },
+        "type": "Group"
+      }
+    }
+  }
+}
